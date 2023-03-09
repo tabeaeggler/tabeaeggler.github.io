@@ -1,0 +1,8 @@
+/* Add styles for the chart here */
+.bar {
+    fill: steelblue;
+}
+
+.bar:hover {
+    fill: brown;
+}
