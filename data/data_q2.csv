@@ -1,7 +1,2 @@
-level,value
-increased a lot,2901.89924973798
-increased a little,5022.866179315158
-stayed the same,1149.008182653289
-decreased a litte,246.540203507833
-decreased a lot,53.682925414270564
-no entry,626.0032593714711
+group,increased a lot,increased a little,stayed the same,decreased a litte,decreased a lot,no entry
+1,29.0189924973798,50.22866179315157,11.49008182653289,2.46540203507833,0.5368292541427057,6.260032593714711

@@ -1,4 +1,4 @@
-export function drawBarChart(dataFile) {
+export function drawBarChart(dataFile, cssContainer) {
 
     // set the dimensions and margins of the graph
     const margin = {top: 10, right: 20, bottom: 20, left: 30},
@@ -6,7 +6,7 @@ export function drawBarChart(dataFile) {
         height = 100 - margin.top - margin.bottom;
 
     // append the svg object to the body of the page
-    const svg = d3.select("body")
+    const svg = d3.select(cssContainer)
         .append("svg")
         .classed("barchart-container", true)
         .attr("width", width + margin.left + margin.right)
