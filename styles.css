@@ -9,6 +9,14 @@ body {
     text-align: center;
 }
 
+h1 {
+    font-size: 40px;
+}
+
+#intro-container {
+    margin-top: 18%;
+}
+
 .barchart-container {
     margin: 0 auto;
     display: block;
@@ -23,7 +31,7 @@ body {
 #description {
     width: 700px;
     margin: 0 auto;
-    margin-bottom: 90px;
+    margin-bottom: 60px;
 }
 
 #chart1-container {
@@ -87,4 +95,35 @@ select {
     border: 1px solid #afafaf;
     cursor: pointer;
     outline: none;
+}
+
+#arrow-container a img {
+    height: 60px;
+    width: 60px;
+    opacity: 0.8;
+    transition: opacity 0.2s ease-in-out;
+    animation: arrow-pulse 2.5s ease-in-out infinite;
+}
+
+@keyframes arrow-pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.15);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#arrow-container a:hover img {
+    opacity: 1;
+    height: 63px;
+    width: 63px;
+    animation-play-state: paused;
+}
+
+#arrow-container a:not(:hover) img {
+    animation-play-state: running;
 }

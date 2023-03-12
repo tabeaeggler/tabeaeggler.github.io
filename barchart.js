@@ -73,7 +73,7 @@ export function drawBarChart(dataFile, cssContainer) {
                 // Show the line
                 line.attr("x1", xPosition + rectWidth/2)
                     .attr("x2", xPosition + rectWidth/2)
-                    .style("display", "block");
+                    .style("display", "block")
             })
             .on("mousemove", function(d) {
                 // Get the position of the corresponding rectangle
@@ -95,8 +95,9 @@ export function drawBarChart(dataFile, cssContainer) {
 
         // Define the line
         const line = svg.append("line")
-            .classed("tooltip-line", true)
+            .attr("class", "tooltip-line")
             .attr("y1", height - 25)
-            .attr("y2", height - 12);
+            .attr("y2", height - 12)
+            .style("display", "none");
     })
 }

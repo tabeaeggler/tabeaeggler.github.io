@@ -4,10 +4,21 @@
     <meta charset="utf-8">
     <title>D3.js Chart</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        html, body {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
+<div id="intro-container">
 <h1>Cost of Living Crisis</h1>
 <p id="description">The following visualizations aim to answer key questions about the cost of living crisis in London and the UK. Through data analysis and visualization, we explore the financial impacts on Londoners, changes in the cost of living over time, factors influencing inflation rates, and comparisons with other European countries.</p>
+    <div id="arrow-container">
+        <a href="#q1-container"><img src="arrow.svg" alt="scroll arrow"></a>
+    </div>
+</div>
+<div id="q1-container">
 <h2>- What is the current mood among Londoners? -</h2>
 <div id="chart1-container">
     <h3>... current financial situation</h3>
@@ -18,7 +29,7 @@
 <div id="chart3-container">
     <h3>... cost of living change by category and demographics</h3>
     <select id="dropdown">
-        <option value="" disabled selected>--please select--</option>
+        <option value="" disabled selected>--select demography-</option>
         <option value="1">age</option>
         <option value="2">employment</option>
         <option value="3">ethnicity</option>
@@ -32,7 +43,11 @@
         <div id="chart4_5"></div>
     </div>
 </div>
-
+</div>
+<script>
+    var introContainer = document.getElementById('intro-container');
+    introContainer.style.height = window.innerHeight + 'px';
+</script>
 <script src="https://d3js.org/d3.v5.js"></script>
 <script type="module" src="barchart.js"></script>
 <script type="module" src="heatmap.js"></script>
