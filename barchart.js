@@ -33,7 +33,6 @@ export function drawBarChart(dataFile, cssContainer) {
             .order(d3.stackOrderReverse);
 
         var stackedData = stackGen(data);
-        console.log(stackedData)
 
 
         // Define the tooltip

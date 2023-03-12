@@ -68,6 +68,7 @@ export function drawHeatMap(dataFile, cssContainer, showYAxis, title) {
             .attr("class", "tooltip-heatmap")
             .style("position", "fixed");
 
+
         // add the squares
         svg.selectAll()
             .data(data, function(d) {return d.change+':'+d.category;})
@@ -79,16 +80,15 @@ export function drawHeatMap(dataFile, cssContainer, showYAxis, title) {
             .attr("width", x.bandwidth() )
             .attr("height", y.bandwidth() )
             .style("fill", function(d) { return color(d.value)} )
-            .style("stroke-width", 4)
+            .style("stroke-width", 3)
             .style("stroke", "none")
             .style("opacity", 0.8)
             .on("mouseover", function(d) {
                 tooltip
                     .style("opacity", 1)
                 d3.select(this)
-                    .style("stroke", "black")
+                    .style("stroke", "#333")
                     .style("opacity", 1)
-
             })
             .on("mousemove", function(d) {
                 let pos = d3.select(this).node().getBoundingClientRect();
@@ -106,8 +106,7 @@ export function drawHeatMap(dataFile, cssContainer, showYAxis, title) {
                         }
                     })
                     .style('left', `${(pos['x'])}px`)
-                    .style('top', `${(pos['y'] + 40)}px`);
-
+                    .style('top', `${(pos['y'] + 30)}px`);
             })
 
             .on("mouseleave", function(d) {
