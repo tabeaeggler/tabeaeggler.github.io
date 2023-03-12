@@ -37,9 +37,10 @@ export function drawBarChart(dataFile, cssContainer) {
 
 
         // Define the tooltip
-        const tooltip = d3.select("body").append("div")
+        const tooltip = d3.select(cssContainer).append("div")
             .attr("class", "tooltip")
-            .style("opacity", 0);
+            .style("opacity", 0)
+            .style("position", "fixed");
 
 
         // Show the bars
@@ -53,15 +54,16 @@ export function drawBarChart(dataFile, cssContainer) {
             .join("rect")
             .attr("x", d => xScale(d[1]))
             .attr("width", d => xScale(d[0]) - xScale(d[1]))
-            .attr("height", 50)
+            .attr("height", 40)
             .attr("stroke", "black")
             .attr("stroke-width", 0.)
+            .attr("rx", 2)
+            .attr("ry", 2)
             .on("mouseover", function(d) {
                 // Show the tooltip
                 tooltip.transition()
                     .duration(200)
                     .style("opacity", .9)
-                    .style("position", "absolute");
 
                 const rectWidth = this.getBoundingClientRect().width;
                 var category = d3.select(this.parentNode).datum().key;
@@ -82,7 +84,7 @@ export function drawBarChart(dataFile, cssContainer) {
                 // Move the tooltip to be under the rectangle
                 tooltip
                     .style("left", leftPosition + "px")
-                    .style("top", (rectPosition.bottom + 25) + "px");
+                    .style("top", (rectPosition.bottom + 20) + "px");
             })
             .on("mouseout", function(d) {
                 // Hide the tooltip and line
@@ -95,7 +97,7 @@ export function drawBarChart(dataFile, cssContainer) {
         // Define the line
         const line = svg.append("line")
             .classed("tooltip-line", true)
-            .attr("y1", height - 16)
-            .attr("y2", height);
+            .attr("y1", height - 25)
+            .attr("y2", height - 12);
     })
 }

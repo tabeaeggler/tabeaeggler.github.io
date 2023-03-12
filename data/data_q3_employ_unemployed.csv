@@ -1,0 +1,37 @@
+change,demo,value,category
+increased a lot,unemployed,32.8081541570086,food
+increased a little,unemployed,33.22234925707385,food
+stayed the same,unemployed,21.9852115862741,food
+decreased a little,unemployed,2.628558597036269,food
+decreased a lot,unemployed,0,food
+don’t know,unemployed,9.355726402607182,food
+increased a lot,unemployed,7.696369431471574,rent
+increased a little,unemployed,18.88448444473725,rent
+stayed the same,unemployed,50.705602639272726,rent
+decreased a little,unemployed,1.712513724217659,rent
+decreased a lot,unemployed,0.5557683992082724,rent
+don’t know,unemployed,20.445261361092502,rent
+increased a lot,unemployed,48.0118609393779,energy
+increased a little,unemployed,26.24053210883825,energy
+stayed the same,unemployed,5.85248307701062,energy
+decreased a little,unemployed,4.021378377383391,energy
+decreased a lot,unemployed,0.5673374159246976,energy
+don’t know,unemployed,15.30640808146514,energy
+increased a lot,unemployed,20.11534060197922,other
+increased a little,unemployed,32.1417479991265,other
+stayed the same,unemployed,27.494532143625676,other
+decreased a little,unemployed,1.5606602672043781,other
+decreased a lot,unemployed,1.7415468110190668,other
+don’t know,unemployed,16.94617217704518,other
+increased a lot,unemployed,18.72386175198983,transport
+increased a little,unemployed,30.465177787703112,transport
+stayed the same,unemployed,27.63447772223983,transport
+decreased a little,unemployed,3.6497168996933125,transport
+decreased a lot,unemployed,1.112024089732438,transport
+don’t know,unemployed,18.41474174864148,transport
+increased a lot,unemployed,12.795057623269809,leisure
+increased a little,unemployed,34.957152035967546,leisure
+stayed the same,unemployed,22.410532062823492,leisure
+decreased a little,unemployed,3.044676644816791,leisure
+decreased a lot,unemployed,3.570790501828929,leisure
+don’t know,unemployed,23.221791131293422,leisure

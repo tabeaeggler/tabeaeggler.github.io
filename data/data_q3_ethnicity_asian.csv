@@ -1,0 +1,37 @@
+change,demo,value,category
+increased a lot,asian,32.24947933518939,food
+increased a little,asian,34.31998517671307,food
+stayed the same,asian,16.355674531186253,food
+decreased a little,asian,2.472830072688712,food
+decreased a lot,asian,0,food
+don’t know,asian,14.60203088422258,food
+increased a lot,asian,18.1885355339618,rent
+increased a little,asian,12.87836685439266,rent
+stayed the same,asian,40.631523751209095,rent
+decreased a little,asian,6.7648486199436295,rent
+decreased a lot,asian,0,rent
+don’t know,asian,21.53672524049281,rent
+increased a lot,asian,44.76718980854279,energy
+increased a little,asian,20.00864146679418,energy
+stayed the same,asian,10.56274812573199,energy
+decreased a little,asian,4.263249475144816,energy
+decreased a lot,asian,0.5795265356494367,energy
+don’t know,asian,19.81864458813679,energy
+increased a lot,asian,30.401798902751707,other
+increased a little,asian,24.59194615232939,other
+stayed the same,asian,19.0702834254504,other
+decreased a little,asian,2.472830072688712,other
+decreased a lot,asian,3.3931532673449873,other
+don’t know,asian,20.069988179434812,other
+increased a lot,asian,26.01138301554767,transport
+increased a little,asian,24.79781496882368,transport
+stayed the same,asian,27.4947477777928,transport
+decreased a little,asian,2.75326333389123,transport
+decreased a lot,asian,2.284675960215341,transport
+don’t know,asian,16.65811494372926,transport
+increased a lot,asian,18.41029109531556,leisure
+increased a little,asian,23.87906333627807,leisure
+stayed the same,asian,21.30390123217055,leisure
+decreased a little,asian,9.167118881707955,leisure
+decreased a lot,asian,6.972634372472054,leisure
+don’t know,asian,20.26699108205582,leisure

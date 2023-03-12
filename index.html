@@ -15,9 +15,35 @@
 <div id="chart2-container">
     <h3>... overall cost of living change (past 6 months)</h3>
 </div>
+<div id="chart3-container">
+    <h3>... cost of living change by category and demographics</h3>
+    <select id="dropdown">
+        <option value="1">age</option>
+        <option value="2">employment</option>
+        <option value="3">ethnicity</option>
+    </select>
+    <div id="heatmap-container">
+        <div id="chart4_0"></div>
+        <div id="chart4_1"></div>
+        <div id="chart4_2"></div>
+        <div id="chart4_3"></div>
+        <div id="chart4_4"></div>
+        <div id="chart4_5"></div>
+    </div>
+
+</div>
+
+
+
+
+
+
 <script src="https://d3js.org/d3.v5.js"></script>
 <script type="module" src="barchart.js"></script>
+<script type="module" src="heatmap.js"></script>
 <script type="module" src="chart1.js"></script>
 <script type="module" src="chart2.js"></script>
+<script type="module" src="chart3.js"></script>
+<script type="module" src="chart4.js"></script>
 </body>
 </html>

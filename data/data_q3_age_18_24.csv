@@ -1,0 +1,37 @@
+change,demo,value,category
+increased a lot,18-24,11.94893629880195,food
+increased a little,18-24,35.06357439949886,food
+stayed the same,18-24,22.78239072816167,food
+decreased a little,18-24,5.83283213908758,food
+decreased a lot,18-24,1.0892473194833319,food
+don’t know,18-24,23.28301911496658,food
+increased a lot,18-24,5.425215933023885,rent
+increased a little,18-24,13.08249756762442,rent
+stayed the same,18-24,39.374605003715764,rent
+decreased a little,18-24,8.586624913973955,rent
+decreased a lot,18-24,1.256369265750746,rent
+don’t know,18-24,32.27468731591122,rent
+increased a lot,18-24,21.33677758665947,energy
+increased a little,18-24,24.156616382580072,energy
+stayed the same,18-24,20.70083245436783,energy
+decreased a little,18-24,1.293238519052193,energy
+decreased a lot,18-24,2.17434622116396,energy
+don’t know,18-24,30.338188836176478,energy
+increased a lot,18-24,15.3914494423267,other
+increased a little,18-24,22.03497846413838,other
+stayed the same,18-24,25.783473269564833,other
+decreased a little,18-24,3.917426551463766,other
+decreased a lot,18-24,4.49310379929381,other
+don’t know,18-24,28.3795684732125,other
+increased a lot,18-24,17.68945336366118,transport
+increased a little,18-24,21.11476757283398,transport
+stayed the same,18-24,27.298910548073408,transport
+decreased a little,18-24,9.21465857102053,transport
+decreased a lot,18-24,3.7617501723636897,transport
+don’t know,18-24,20.92045977204723,transport
+increased a lot,18-24,10.18665389365877,leisure
+increased a little,18-24,25.739011397012252,leisure
+stayed the same,18-24,27.295615275906073,leisure
+decreased a little,18-24,9.247056891927082,leisure
+decreased a lot,18-24,2.148587377685211,leisure
+don’t know,18-24,25.38307516381064,leisure

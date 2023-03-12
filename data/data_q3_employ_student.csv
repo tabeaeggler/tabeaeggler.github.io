@@ -1,0 +1,37 @@
+change,demo,value,category
+increased a lot,student,15.61168709787421,food
+increased a little,student,29.628275322149022,food
+stayed the same,student,24.60076454919496,food
+decreased a little,student,4.644838942728089,food
+decreased a lot,student,0.2573938634525659,food
+don’t know,student,25.257040224601152,food
+increased a lot,student,9.729644222106337,rent
+increased a little,student,10.679209177766861,rent
+stayed the same,student,43.64456171803653,rent
+decreased a little,student,3.534709413489037,rent
+decreased a lot,student,0.2573938634525659,rent
+don’t know,student,32.154481605148675,rent
+increased a lot,student,24.37346484266083,energy
+increased a little,student,18.48477059687869,energy
+stayed the same,student,19.47789443125624,energy
+decreased a little,student,2.5271715137377573,energy
+decreased a lot,student,0.6198264455366439,energy
+don’t know,student,34.51687216992984,energy
+increased a lot,student,14.1947245224635,other
+increased a little,student,21.55198428327205,other
+stayed the same,student,30.827594699116517,other
+decreased a little,student,4.15650926436238,other
+decreased a lot,student,0,other
+don’t know,student,29.269187230785548,other
+increased a lot,student,21.3566388868925,transport
+increased a little,student,15.044193181419471,transport
+stayed the same,student,37.16181421181778,transport
+decreased a little,student,5.195218689317855,transport
+decreased a lot,student,2.303974756508263,transport
+don’t know,student,18.93816027404414,transport
+increased a lot,student,14.94973234037359,leisure
+increased a little,student,22.54936073077006,leisure
+stayed the same,student,27.08856432345713,leisure
+decreased a little,student,10.67501277516576,leisure
+decreased a lot,student,2.87279035466188,leisure
+don’t know,student,21.864539475571572,leisure
