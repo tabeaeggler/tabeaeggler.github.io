@@ -68,7 +68,6 @@ export function drawHeatMap(dataFile, cssContainer, showYAxis, title) {
             .attr("class", "tooltip-heatmap")
             .style("position", "fixed");
 
-
         // add the squares
         svg.selectAll()
             .data(data, function(d) {return d.change+':'+d.category;})
