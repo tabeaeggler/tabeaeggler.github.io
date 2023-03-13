@@ -25,7 +25,7 @@ export function drawBarChart(dataFile, cssContainer) {
             .range([ width, 0 ]);
 
         // color palette = one color per subgroup
-        const colors = ["#d73027","#fc8d59","#fee090","#91bfdb","#4575b4", "#2b2b2b"];
+        const colors = ["#b2182b","#ef8a62","#fddbc7","#67a9cf","#2166ac", "#2b2b2b"];
 
         // stack data
         var stackGen = d3.stack()
