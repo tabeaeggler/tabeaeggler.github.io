@@ -119,8 +119,6 @@ select {
 
 #arrow-container a:hover img {
     opacity: 1;
-    height: 63px;
-    width: 63px;
     animation-play-state: paused;
 }
 
