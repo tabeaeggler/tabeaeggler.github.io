@@ -13,6 +13,10 @@ h1 {
     font-size: 40px;
 }
 
+#data-source {
+    margin-top: 3%;
+}
+
 #intro-container {
     margin-top: 18%;
 }
@@ -125,3 +129,4 @@ select {
 #arrow-container a:not(:hover) img {
     animation-play-state: running;
 }
+
