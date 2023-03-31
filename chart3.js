@@ -2,6 +2,7 @@ import { drawHeatMap } from "./heatmap.js";
 
 drawHeatMap("./data/data_q3_all.csv", "#chart4_0", "true", "all londoners");
 d3.select('#dropdown').on('change', function() {
+
     // remove all previous heatmaps
     d3.selectAll(".heatmap-container-svg").remove();
 

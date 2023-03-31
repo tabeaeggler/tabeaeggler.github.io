@@ -1,4 +1,5 @@
 export function drawHeatMap(dataFile, cssContainer, showYAxis, title) {
+
     // set the dimensions and margins of the graph
     const margin = {top: 30, right: 30, bottom: 30, left: 70},
         width = 150,
@@ -21,7 +22,7 @@ export function drawHeatMap(dataFile, cssContainer, showYAxis, title) {
         const myChanges = Array.from(new Set(data.map(d => d.change)))
         const myCategories = Array.from(new Set(data.map(d => d.category)))
 
-        // Build scales
+        // Create scales: x, y and color
         const x = d3.scaleBand()
             .range([ 0, width ])
             .domain(myChanges)
@@ -81,7 +82,7 @@ export function drawHeatMap(dataFile, cssContainer, showYAxis, title) {
             .style("fill", function(d) { return color(d.value)} )
             .style("stroke-width", 3)
             .style("stroke", "none")
-            .style("opacity", 0.8)
+            .style("opacity", 0)
             .on("mouseover", function(d) {
                 tooltip
                     .style("opacity", 1)
@@ -115,12 +116,20 @@ export function drawHeatMap(dataFile, cssContainer, showYAxis, title) {
                     .style("stroke", "none")
                     .style("opacity", 0.8)
             })
+            .transition()
+            .duration(600)
+            .style("opacity", 0.8);
     })
 
     // Add title to graph
-    svg.append("text")
+    const titleText = svg.append("text")
         .attr("class", "title-heatmap")
         .attr("x", width / 2)
         .attr("y", 0 - 15)
+        .style("opacity", 0) // Set initial opacity to 0 for fade-in effect
         .text(title);
+
+    titleText.transition()
+        .duration(600)
+        .style("opacity", 1); // Set final opacity after transition
 }
