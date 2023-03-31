@@ -1,11 +1,11 @@
 export function drawHeatMap(dataFile, cssContainer, showYAxis, title) {
 
-    // set the dimensions and margins of the graph
+    // Set the dimensions and margins of the graph
     const margin = {top: 30, right: 30, bottom: 30, left: 70},
         width = 150,
         height = 150;
 
-    // append the svg object to the body of the page
+    // Append the svg object to the body of the page
     const svg = d3.select(cssContainer)
         .append("svg")
         .attr("class", "heatmap-container-svg")
@@ -15,14 +15,14 @@ export function drawHeatMap(dataFile, cssContainer, showYAxis, title) {
         .append("g")
         .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
-    //Read the data
+    // Read the data
     d3.csv(dataFile).then(function(data) {
 
         // Labels of row and columns
         const myChanges = Array.from(new Set(data.map(d => d.change)))
         const myCategories = Array.from(new Set(data.map(d => d.category)))
 
-        // Create scales: x, y and color
+        // Create x scale
         const x = d3.scaleBand()
             .range([ 0, width ])
             .domain(myChanges)
@@ -47,6 +47,7 @@ export function drawHeatMap(dataFile, cssContainer, showYAxis, title) {
         }))
             .select(".domain").remove()
 
+        // Create y scale
         const y = d3.scaleBand()
             .range([ height, 0 ])
             .domain(myCategories)
@@ -59,17 +60,18 @@ export function drawHeatMap(dataFile, cssContainer, showYAxis, title) {
                 .select(".domain").remove()
         }
 
+        // Create color scale
         const color = d3.scaleSequential()
             .interpolator(d3.interpolateReds) // interpolateRdBu
             .domain([1, 60]); // change domain to invert the scale
 
-        // create a tooltip
+        // Create a tooltip
         const tooltip = d3.select(cssContainer)
             .append("div")
             .attr("class", "tooltip-heatmap")
             .style("position", "fixed");
 
-        // add the squares
+        // Add the squares
         svg.selectAll()
             .data(data, function(d) {return d.change+':'+d.category;})
             .join("rect")
